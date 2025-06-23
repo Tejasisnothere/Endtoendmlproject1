@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Group Details</title>
+    <style>
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            color: #fff;
+            max-width: 600px;
+            width: 95%;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+            color: #f1f1f1;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 25px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.95); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Groups Explained</h1>
+        <p>Students are categorized into anonymized groups for analytical purposes:</p>
+        
+        <ul>
+            <li><b>Group A</b> – Typically lower performance range</li>
+            <li><b>Group B</b> – Below average academic performance</li>
+            <li><b>Group C</b> – Average performing students</li>
+            <li><b>Group D</b> – Above average; often students with higher parental education</li>
+            <li><b>Group E</b> – Highest performing student group</li>
+        </ul>
+
+        <p><i>Note:</i> These groups are anonymized; they don't reflect real-world ethnic or demographic labels.</p>
+
+        <a href="/" class="btn"> Back to Home</a>
+    </div>
+
+</body>
+</html>

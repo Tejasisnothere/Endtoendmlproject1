@@ -10,6 +10,9 @@ app = application
 def index():
     return render_template('index.html')
 
+@app.route('/groupinfo')
+def groupinfo():
+    return render_template('groupinfo.html')
 
 @app.route('/predictdata', methods=['GET', 'POST'])
 def predict_datapoint():
